@@ -29,6 +29,7 @@ module "janitor" {
 | `name` | Lambda function name | Yes | |
 | `schedule_expression` | CloudWatch Cron schedule expression | No | `cron(0 3 * * ? *)` |
 | `log_retention` | Retention in days for CloudWatch Logs | No | 7 |
+| `boundary_policy` | Boundary policy ARN | No | `null` |
 
 ## Attributes
 

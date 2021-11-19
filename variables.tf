@@ -15,3 +15,9 @@ variable "log_retention" {
   description = "Retention in days for CloudWatch Logs"
   default     = 7
 }
+
+variable "boundary_policy" {
+  type        = string
+  description = "Boundary policy ARN"
+  default     = null
+}

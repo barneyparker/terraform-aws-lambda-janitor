@@ -1,6 +1,7 @@
 resource "aws_iam_role" "janitor" {
   name               = var.name
   assume_role_policy = data.aws_iam_policy_document.assume_role.json
+  permissions_boundary = var.boundary_policy
 }
 
 data "aws_iam_policy_document" "assume_role" {
@@ -14,9 +15,9 @@ data "aws_iam_policy_document" "assume_role" {
 }
 
 resource "aws_iam_role_policy" "janitor" {
-  name   = "Lambda-Actions"
-  role   = aws_iam_role.janitor.id
-  policy = data.aws_iam_policy_document.janitor.json
+  name                 = "Lambda-Actions"
+  role                 = aws_iam_role.janitor.id
+  policy               = data.aws_iam_policy_document.janitor.json
 }
 
 data "aws_iam_policy_document" "janitor" {
