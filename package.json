@@ -1,0 +1,18 @@
+{
+  "name": "terraform-aws-lambda-janitor",
+  "version": "1.0.0",
+  "description": "Clean up unused Lambda function in the current AWS Account.",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.577.0",
+    "eslint": "^9.2.0",
+    "eslint-plugin-jsdoc": "^48.2.5",
+    "globals": "^15.2.0"
+  }
+}

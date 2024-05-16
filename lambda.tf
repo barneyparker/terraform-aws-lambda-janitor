@@ -10,7 +10,7 @@ resource "aws_lambda_function" "lambda" {
 
   filename         = data.archive_file.bundle.output_path
   source_code_hash = data.archive_file.bundle.output_base64sha256
-  runtime          = "nodejs14.x"
+  runtime          = "nodejs20.x"
   memory_size      = 128
   timeout          = 90
   handler          = "index.handler"
