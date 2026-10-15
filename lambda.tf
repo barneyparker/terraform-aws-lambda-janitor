@@ -12,7 +12,7 @@ resource "aws_lambda_function" "lambda" {
   source_code_hash = data.archive_file.bundle.output_base64sha256
   runtime          = "nodejs20.x"
   memory_size      = 128
-  timeout          = 90
+  timeout          = 900
   handler          = "index.handler"
   role             = aws_iam_role.janitor.arn
 }
