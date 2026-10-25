@@ -16,7 +16,7 @@ The function is configured to run according to a schedule.  By default this is a
 
 ```HCL
 module "janitor" {
-  source = "git@github.com:barneyparker/terraform-aws-lambda-janitor.git?ref=v1.0.0"
+  source = "git@github.com:barneyparker/terraform-aws-lambda-janitor.git?ref=v3.0.0"
 
   name = "Janitor"
 }
